@@ -1,0 +1,25 @@
+{
+  "name": "file-manager",
+  "version": "1.0.0",
+  "description": "Simple cli-application that provide basic file operations created as a homework at course NodeJS 2024Q3",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "start:name": "node src/index.js --username=z-e-a"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/z-e-a/node-file-manager.git"
+  },
+  "keywords": [
+    "filemanager",
+    "node.js"
+  ],
+  "author": "z-e-a",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/z-e-a/node-file-manager/issues"
+  },
+  "homepage": "https://github.com/z-e-a/node-file-manager#readme",
+}
