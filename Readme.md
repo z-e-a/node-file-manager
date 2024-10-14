@@ -46,6 +46,7 @@ npm run start -- --username=your_username
     up
     ```
     - Go to dedicated folder from current directory (`path_to_directory` can be relative or absolute)
+    *(✅ spases in file/folder name are supported!)*
     ```bash
     cd path_to_directory
     ```
@@ -57,27 +58,33 @@ npm run start -- --username=your_username
     ls
     ```
 - Basic operations with files
-    - Read file and print it's content in console (using Readable stream): 
+    - Read file and print it's content in console (using Readable stream)  
+    *(✅ spases in file/folder name are supported!)*: 
     ```bash
     cat path_to_file
     ```
-    - Create empty file in current working directory: 
+    - Create empty file in current working directory  
+    *(✅ spases in file/folder name are supported!)*: 
     ```bash
     add new_file_name
     ```
-    - Rename file (content remain unchanged): 
+    - Rename file (content remain unchanged)  
+    *(⚠️ spases in file/folder name are NOT supported!)*: 
     ```bash
     rn path_to_file new_filename
     ```
-    - Copy file (using Readable and Writable streams): 
+    - Copy file (using Readable and Writable streams)  
+    *(⚠️ spases in file/folder name are NOT supported!)*: 
     ```bash
     cp path_to_file path_to_new_directory
     ```
-    - Move file (same as copy but initial file is deleted, copying use Readable and Writable streams): 
+    - Move file (same as copy but initial file is deleted, copying use Readable and Writable streams)  
+    *(⚠️ spases in file/folder name are NOT supported!)*: 
     ```bash
     mv path_to_file path_to_new_directory
     ```
-    - Delete file: 
+    - Delete file  
+    *(✅ spases in file/folder name are supported!)*: 
     ```bash
     rm path_to_file
     ```
@@ -104,15 +111,18 @@ npm run start -- --username=your_username
     ```
 - Hash calculation  
     - Calculate hash for file and print it into console  
+    - *(✅ spases in file/folder name are supported!)*
     ```bash
     hash path_to_file
     ```
 - Compress and decompress operations  
     - Compress file (using Brotli algorithm, using Streams API)  
+    *(⚠️ spases in file/folder name are NOT supported!)*:
     ```bash
     compress path_to_file path_to_destination
     ```
     - Decompress file (using Brotli algorithm, using Streams API)  
+    *(⚠️ spases in file/folder name are NOT supported!)*:
     ```bash
     decompress path_to_file path_to_destination
     ```  
